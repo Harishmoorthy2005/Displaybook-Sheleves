@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="UrbanLadderSuite">
+
+    <test name="Module">
+        <classes>
+            <class name="bookshelves.TC_01_BookshelvesSearchTest"/>
+            <class name="bookshelves.TC_02_FilterByPriceBelow15000Test"/>
+            <class name="bookshelves.TC_03_FilterByStorageTypeOpenTest"/>
+            <class name="bookshelves.TC_04_BookshelfPriceAnalyticsTest"/>
+            <class name="bookshelves.TC_05_BookshelfNameAndPriceDisplayTestOfThree"/>
+            <class name="bookshelves.TC_06_NavigateToFirstProductTest"/>
+            <class name="bookshelves.TC_07_VerifyBookshelvesCountForEngineeredWoodFiltersTest"/>
+            <class name="bookshelves.TC_08_SortByDiscountHighToLowAndExtractTop20ProductsTest"/>
+            <class name="bookshelves.TC_09_NavigateToBookshelfProductPageTest"/>
+            <class name="bookshelves.TC_10_VerifyAndSaveProductImageTest"/>
+            <class name="studychairs.TC_11_SearchStudyChairsTest"/>
+            <class name="studychairs.TC_12_GetNoOfStudyChairs"/>
+            <class name="studychairs.TC_13_SortByHighestRecommendationTest"/>
+            <class name="studychairs.TC_14_GetTopThreeStudyChairsTest"/>
+            <class name="studychairs.TC_15_GetByDiscountHighToLowTest"/>
+            <class name="collections.TC_16_MouseHoverOnNewArrivalsTest"/>
+            <class name="collections.TC_17_ExtractSubMenuItemsTest"/>
+            <class name="collections.TC_18_TerraCollectionNavigationTest"/>
+            <class name="collections.TC_19_VerifyHighToLowSortingTest"/>
+            <class name="collections.TC_20_NavigateToBedroomUnderOasisTest"/>
+            <class name="collections.TC_21_GetNoOfBedroomCollection"/>
+            <class name="giftcards.TC_22_NavigateToGiftCardsTest"/>
+            <class name="giftcards.TC_23_FillGiftCardFormTest"/>
+            <class name="giftcards.TC_24_CaptureInvalidEmailValidationTest"/>
+            <class name="giftcards.TC_25_SelectAnniversaryGiftCardTest"/>
+            <class name="giftcards.TC_26_VerifyFutureDeliveryDateSelection"/>
+        </classes>
+    </test>
+</suite>
