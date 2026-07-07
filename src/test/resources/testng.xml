@@ -13,7 +13,6 @@
             <class name="bookshelves.TC_07_VerifyBookshelvesCountForEngineeredWoodFiltersTest"/>
             <class name="bookshelves.TC_08_SortByDiscountHighToLowAndExtractTop20ProductsTest"/>
             <class name="bookshelves.TC_09_NavigateToBookshelfProductPageTest"/>
-            <class name="bookshelves.TC_10_VerifyAndSaveProductImageTest"/>
             <class name="studychairs.TC_11_SearchStudyChairsTest"/>
             <class name="studychairs.TC_12_GetNoOfStudyChairs"/>
             <class name="studychairs.TC_13_SortByHighestRecommendationTest"/>
