@@ -8,8 +8,11 @@
             <class name="bookshelves.TC_02_FilterByPriceBelow15000Test"/>
             <class name="bookshelves.TC_03_FilterByStorageTypeOpenTest"/>
             <class name="bookshelves.TC_04_BookshelfPriceAnalyticsTest"/>
-            <class name="bookshelves.TC_05_BookshelfNameAndPriceDisplayTestOfThree"/>
-            <class name="studychairs.TC_11_SearchStudyChairsTest"/>
+            <class name="bookshelves.TC_05_BookshelfNameAndPriceDisplayTestOfThree"/><class name="giftcards.TC_06_NavigateToGiftCardsTest"/>
+            <class name="giftcards.TC_07_FillGiftCardFormTest"/>
+            <class name="giftcards.TC_08_CaptureInvalidEmailValidationTest"/>
+            <class name="giftcards.TC_09_SelectAnniversaryGiftCardTest"/>
+            <class name="giftcards.TC_10_VerifyFutureDeliveryDateSelection"/><class name="studychairs.TC_11_SearchStudyChairsTest"/>
             <class name="studychairs.TC_12_GetNoOfStudyChairs"/>
             <class name="studychairs.TC_13_SortByHighestRecommendationTest"/>
             <class name="studychairs.TC_14_GetTopThreeStudyChairsTest"/>
@@ -20,11 +23,7 @@
             <class name="collections.TC_19_NavigateToTerraProductTest"/>
             <class name="collections.TC_20_VerifyProductDisplayTest"/>
 
-            <class name="giftcards.TC_06_NavigateToGiftCardsTest"/>
-            <class name="giftcards.TC_07_FillGiftCardFormTest"/>
-            <class name="giftcards.TC_08_CaptureInvalidEmailValidationTest"/>
-            <class name="giftcards.TC_09_SelectAnniversaryGiftCardTest"/>
-            <class name="giftcards.TC_10_VerifyFutureDeliveryDateSelection"/>
+
         </classes>
     </test>
 </suite>
