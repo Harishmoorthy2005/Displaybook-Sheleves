@@ -13,7 +13,7 @@ import utils.ScreenshotUtils;
 import java.io.IOException;
 
 
-public class TC_26_VerifyFutureDeliveryDateSelection extends BaseTest {
+public class TC_10_VerifyFutureDeliveryDateSelection extends BaseTest {
     @Test
     public void verifyFutureDeliveryDateSelection() throws IOException {
         ExtentReportManager.createTest("TC_26 - Verify Future Delivery Date Selection");

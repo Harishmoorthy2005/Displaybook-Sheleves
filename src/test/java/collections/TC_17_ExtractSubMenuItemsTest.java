@@ -9,6 +9,8 @@ import utils.ExtentReportManager;
 import utils.LoggerManager;
 import utils.ExcelUtils;
 
+import java.util.List;
+
 public class TC_17_ExtractSubMenuItemsTest extends BaseTest{
     @Test
     public void captureTerraCollectionData() {
@@ -19,7 +21,7 @@ public class TC_17_ExtractSubMenuItemsTest extends BaseTest{
         homePage.hoverOnNewArrivals();
         boolean dropdown = homePage.isNewArrivalsDropdownDisplayed();
         Assert.assertTrue(dropdown, "Dropdown not displayed");
-        java.util.List<String> items = homePage.getTerraCollectionItems();
+        List<String> items = homePage.getTerraCollectionItems();
         LoggerManager.info("Total items captured: " + items.size());
         ExcelUtils.writeTerraData(items);
         ExtentReportManager.getTest().pass("Terra Collection data captured & written to Excel ✅");

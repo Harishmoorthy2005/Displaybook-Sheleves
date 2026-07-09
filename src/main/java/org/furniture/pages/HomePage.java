@@ -36,8 +36,7 @@ public class HomePage {
     @FindBy(xpath = "//a[text()='Terra Collection']//ancestor::li//ul//a")
     List<WebElement> terraItems;
 
-    @FindBy(xpath = "//a[text()='Terra Collection']/ancestor::li//a[text()='Bedroom']")
-    WebElement terraBedroom;
+
 
     // Hover on New Arrivals
     public void hoverOnNewArrivals() {
@@ -102,25 +101,5 @@ public class HomePage {
         String currentUrl = driver.getCurrentUrl();
         LoggerManager.info("Current URL: " + currentUrl);
         return currentUrl.contains("new-terra-collection");
-    }
-
-    // Click Terra Bedroom
-    public void clickTerraBedroom() {
-        PopupHandler.closePopupIfPresent(driver);
-        LoggerManager.info("Waiting for Terra Bedroom option");
-        wait.until(ExpectedConditions.visibilityOf(terraBedroom));
-        LoggerManager.info("Clicking Terra Collection -> Bedroom");
-        ExtentReportManager.getTest().info("Clicking Terra Bedroom");
-        terraBedroom.click();
-    }
-
-    // Validate Terra Bedroom page navigation
-    public boolean isTerraBedroomPageDisplayed() {
-        PopupHandler.closePopupIfPresent(driver);
-        LoggerManager.info("Validating navigation to Terra Bedroom page");
-        wait.until(ExpectedConditions.urlContains("terra-bedroom-collection"));
-        String currentUrl = driver.getCurrentUrl();
-        LoggerManager.info("Current URL: " + currentUrl);
-        return currentUrl.contains("terra-bedroom-collection");
     }
 }

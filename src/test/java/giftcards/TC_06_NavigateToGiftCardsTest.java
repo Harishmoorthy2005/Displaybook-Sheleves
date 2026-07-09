@@ -9,7 +9,7 @@ import com.aventstack.extentreports.Status;
 import utils.LoggerManager;
 import utils.ExtentReportManager;
 
-public class TC_22_NavigateToGiftCardsTest extends BaseTest {
+public class TC_06_NavigateToGiftCardsTest extends BaseTest {
 
     @Test
     public void navigateToGiftCards() {

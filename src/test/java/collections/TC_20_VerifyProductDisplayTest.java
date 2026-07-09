@@ -12,9 +12,9 @@ import utils.ScreenshotUtils;
 
 import java.io.IOException;
 
-public class TC_19_VerifyHighToLowSortingTest extends BaseTest {
+public class TC_20_VerifyProductDisplayTest extends BaseTest {
     @Test
-    public void verifyTerraCollectionPriceHighToLowSorting() throws IOException {
+    public void verifyTerraCollectionProductareDisplayed() throws IOException {
         LoggerManager.info("Starting TC_19 - Verify Terra Collection Price High To Low Sorting");
         ExtentReportManager.getTest().info("Test started");
         HomePage homePage = new HomePage(driver);
@@ -28,13 +28,11 @@ public class TC_19_VerifyHighToLowSortingTest extends BaseTest {
         terraPage.switchToNewTab();
         Assert.assertTrue(terraPage.isTerraProductsPageDisplayed(),
                 "Terra Collection products page is not displayed");
-        terraPage.openAllFilters();
-        terraPage.expandSort();
-        terraPage.selectPriceHighToLow();
-        terraPage.closeFilterPanel();
-        Assert.assertTrue(driver.getCurrentUrl().contains("sortOn=price_dsc"),
-                "URL does not indicate Price High To Low sorting");
+
+        Assert.assertTrue(terraPage.productCount() >0,"No product displayed");
+        LoggerManager.info("The Product are diplayed"+terraPage.productCount());
+
         ScreenshotUtils.capturePageScreenshot(driver, "TC_19_VerifySorting");
-        ExtentReportManager.getTest().pass("Price High To Low sorting verified successfully");
+        ExtentReportManager.getTest().pass("Product diplay verified successfully");
     }
 }

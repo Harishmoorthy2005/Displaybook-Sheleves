@@ -12,7 +12,7 @@ import utils.ScreenshotUtils;
 
 import java.io.IOException;
 
-public class TC_25_SelectAnniversaryGiftCardTest extends BaseTest {
+public class TC_09_SelectAnniversaryGiftCardTest extends BaseTest {
 
     @Test
     public void selectAnniversaryCard() throws IOException {

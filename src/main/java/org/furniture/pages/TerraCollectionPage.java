@@ -11,6 +11,7 @@ import utils.ExtentReportManager;
 import utils.LoggerManager;
 import utils.PopupHandler;
 import java.time.Duration;
+import java.util.List;
 
 public class TerraCollectionPage {
 
@@ -24,14 +25,8 @@ public class TerraCollectionPage {
 
     @FindBy(xpath = "//a[contains(@href,'/collection/terra-collection')]")
     WebElement discoverAllTerraProducts;
-    @FindBy(xpath = "//div[text()='ALL FILTERS']")
-    WebElement allFiltersBtn;
-    @FindBy(xpath = "//span[text()='Sort']")
-    WebElement sortSection;
-    @FindBy(xpath = "//div[text()='Price High to Low']")
-    WebElement priceHighToLowOption;
-    @FindBy(xpath = "//div[@role='button' and @aria-label='Close filter drawer']")
-    WebElement closeSidebarBtn;
+    @FindBy(xpath="//h2[@class=\"XxwSy\"]")
+    List<WebElement> products;
 
     // Scroll to Discover all Terra products
     public void scrollToDiscoverAllTerraProducts() {
@@ -74,38 +69,11 @@ public class TerraCollectionPage {
         return currentUrl.contains("/collection/terra-collection");
     }
 
-    // Open All Filters
-    public void openAllFilters() {
-        PopupHandler.closePopupIfPresent(driver);
-        LoggerManager.info("Opening All Filters");
-        wait.until(
-                        ExpectedConditions.elementToBeClickable(allFiltersBtn))
-                .click();
-    }
 
-    // Expand Sort section
-    public void expandSort() {
-        PopupHandler.closePopupIfPresent(driver);
-        LoggerManager.info("Expanding Sort section");
-        wait.until(
-                        ExpectedConditions.elementToBeClickable(sortSection))
-                .click();
-    }
 
-    // Select Price High to Low
-    public void selectPriceHighToLow() {
+    //check the product display
+    public int productCount(){
         PopupHandler.closePopupIfPresent(driver);
-        LoggerManager.info("Selecting Price High to Low");
-        wait.until(
-                        ExpectedConditions.elementToBeClickable(priceHighToLowOption))
-                .click();
-    }
-
-    // Close Filter Sidebar
-    public void closeFilterPanel() {
-        PopupHandler.closePopupIfPresent(driver);
-        LoggerManager.info("Closing Filter and Sort sidebar");
-        wait.until(ExpectedConditions.elementToBeClickable(closeSidebarBtn))
-                .click();
+        return products.size();
     }
 }

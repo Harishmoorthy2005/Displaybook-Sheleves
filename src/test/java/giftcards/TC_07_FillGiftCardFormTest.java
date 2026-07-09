@@ -8,7 +8,7 @@ import utils.ExcelUtils;
 import utils.LoggerManager;
 import utils.ExtentReportManager;
 
-public class TC_23_FillGiftCardFormTest extends BaseTest {
+public class TC_07_FillGiftCardFormTest extends BaseTest {
 
     @Test
     public void fillGiftCardFormTest() {

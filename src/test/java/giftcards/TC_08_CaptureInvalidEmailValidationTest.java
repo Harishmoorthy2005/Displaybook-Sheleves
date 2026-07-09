@@ -10,7 +10,7 @@ import utils.ExcelUtils;
 import utils.ExtentReportManager;
 import utils.LoggerManager;
 
-public class TC_24_CaptureInvalidEmailValidationTest extends BaseTest {
+public class TC_08_CaptureInvalidEmailValidationTest extends BaseTest {
 
     @Test
     public void validateInvalidSenderEmail() throws Exception {
