@@ -24,6 +24,6 @@ public class TC_17_ExtractSubMenuItemsTest extends BaseTest{
         List<String> items = homePage.getTerraCollectionItems();
         LoggerManager.info("Total items captured: " + items.size());
         ExcelUtils.writeTerraData(items);
-        ExtentReportManager.getTest().pass("Terra Collection data captured & written to Excel ✅");
+        ExtentReportManager.getTest().pass("Terra Collection data captured & written to Excel ");
     }
 }
