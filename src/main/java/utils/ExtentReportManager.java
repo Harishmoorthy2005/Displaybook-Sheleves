@@ -16,7 +16,7 @@ public class ExtentReportManager {
             reporter.config().setDocumentTitle("Test Execution Report");
             extent = new ExtentReports();
             extent.attachReporter(reporter);
-            extent.setSystemInfo("Tester", "Your Name");
+            extent.setSystemInfo("Tester", "Harishmoorthy");
             extent.setSystemInfo("Project", "Urban Ladder");
         }
         return extent;

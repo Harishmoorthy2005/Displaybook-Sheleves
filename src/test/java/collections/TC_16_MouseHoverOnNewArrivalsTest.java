@@ -20,6 +20,7 @@ public class TC_16_MouseHoverOnNewArrivalsTest extends BaseTest {
         ExtentReportManager.getTest().info("Validation result: " + result);
         Assert.assertTrue(result, "New Arrivals dropdown not displayed");
         ExtentReportManager.getTest().pass("Dropdown displayed successfully");
+        System.out.println("haiii");
     }
 
 }
